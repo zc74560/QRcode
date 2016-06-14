@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *input;
 @property (strong, nonatomic) IBOutlet UIImageView *QRImg;
+
 - (IBAction)StartBtnClicked:(id)sender;
+- (IBAction)SaveBtnClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *SaveBtn;
 
 @end

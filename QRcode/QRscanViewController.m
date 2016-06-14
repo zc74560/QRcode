@@ -377,6 +377,8 @@
     [alertCtrl addAction:[UIAlertAction actionWithTitle:actions.firstObject style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
         [self.session startRunning];
         [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+        UIPasteboard *pasteboard=[UIPasteboard generalPasteboard];
+        pasteboard.string=message;
     }]];
     [self presentViewController:alertCtrl animated:YES completion:nil];
 }

@@ -23,10 +23,18 @@
                                 <rect key="frame" x="52" y="296" width="220" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U5y-VG-G7e">
-                                <rect key="frame" x="121" y="200" width="78" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Ng-E7-XOk">
+                                <rect key="frame" x="118" y="228" width="84" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1081839285" green="1" blue="0.97618948350000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="保存至相册"/>
+                                <connections>
+                                    <action selector="SaveBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJV-oO-387"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U5y-VG-G7e">
+                                <rect key="frame" x="120" y="174" width="78" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="开始生成"/>
                                 <connections>
@@ -38,6 +46,7 @@
                     </view>
                     <connections>
                         <outlet property="QRImg" destination="saN-Qp-nPQ" id="z9G-DW-QRS"/>
+                        <outlet property="SaveBtn" destination="4Ng-E7-XOk" id="8dz-oE-6xe"/>
                         <outlet property="input" destination="Rhs-qX-6t5" id="5Kj-gE-fk5"/>
                     </connections>
                 </viewController>
